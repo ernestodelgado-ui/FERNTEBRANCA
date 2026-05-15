@@ -48,10 +48,17 @@
 
   .hero-bg {
     position: absolute; inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1606494554797-279096d01a9a?w=1600&q=80&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.2) saturate(0.7);
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,137,42,0.18) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(107,45,15,0.4) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 60% at 80% 80%, rgba(61,26,8,0.5) 0%, transparent 60%);
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,137,42,0.2) 0%, transparent 70%),
+      linear-gradient(to bottom, rgba(26,10,2,0.3), rgba(26,10,2,0.7));
   }
 
   .hero-lines {
@@ -872,6 +879,12 @@
         <p>La fórmula completa es un secreto comercial guardado en una caja fuerte, transmitido de generación en generación. Solo 5 de los 27 ingredientes son conocidos únicamente por el miembro activo de la familia Branca, quien los mezcla en soledad.</p>
         <p>La bebida llegó a Argentina con la gran oleada de inmigrantes italianos. El éxito fue tal que en 1941 Fratelli Branca instaló su primera fábrica en Parque Patricios —la única destilería de la marca fuera de Italia en el mundo.</p>
       </div>
+      <div style="position:relative;">
+        <img src="foto1.jpg" 
+             alt="Publicidad clásica Fernet Branca"
+             style="width:100%;height:auto;display:block;border-radius:4px;margin-bottom:8px;">
+        <div style="font-size:11px;color:var(--text-light);text-align:center;margin-bottom:12px;">Publicidad clásica — Seit 1845</div>
+      </div>
       <div class="historia-cards">
         <div class="h-card">
           <div class="h-card-icon">🏭</div>
@@ -1195,6 +1208,50 @@
         <div class="escena-desc">La apuesta actual: streamers y creadores, el ecosistema de las nuevas generaciones.</div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- GALERÍA -->
+<section id="galeria" style="background:var(--brown-dark);padding:5rem 2rem;">
+  <div class="container">
+    <p class="section-label" style="color:var(--amber-light)">Fernet Branca</p>
+    <h2 class="section-title" style="color:var(--cream)">Muy <em style="color:var(--gold)">nuestro</em></h2>
+    <div class="divider-line" style="background:linear-gradient(to right,var(--amber-light),transparent);margin-bottom:2rem"></div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:start;">
+
+      <div style="border-radius:6px;overflow:hidden;position:relative;background:#111;">
+        <img src="foto1.jpg" alt="Publicidad clásica Fernet Branca" 
+             style="width:100%;height:auto;display:block;">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:linear-gradient(transparent,rgba(26,10,2,0.95));color:var(--cream);font-size:11px;letter-spacing:1px;text-transform:uppercase;">Publicidad clásica</div>
+      </div>
+
+      <div style="border-radius:6px;overflow:hidden;position:relative;background:#111;">
+        <img src="foto2.jpg" alt="Solo para entendidos" 
+             style="width:100%;height:auto;display:block;">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:linear-gradient(transparent,rgba(26,10,2,0.95));color:var(--cream);font-size:11px;letter-spacing:1px;text-transform:uppercase;">Solo para entendidos</div>
+      </div>
+
+      <div style="border-radius:6px;overflow:hidden;position:relative;background:#111;">
+        <img src="foto3.jpg" alt="Campaña Único" 
+             style="width:100%;height:auto;display:block;">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:linear-gradient(transparent,rgba(26,10,2,0.95));color:var(--cream);font-size:11px;letter-spacing:1px;text-transform:uppercase;">Campaña "Único"</div>
+      </div>
+
+      <div style="border-radius:6px;overflow:hidden;position:relative;background:#111;">
+        <img src="foto4.jpg" alt="La botella y sus hierbas" 
+             style="width:100%;height:auto;display:block;">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:linear-gradient(transparent,rgba(26,10,2,0.95));color:var(--cream);font-size:11px;letter-spacing:1px;text-transform:uppercase;">27 hierbas secretas</div>
+      </div>
+
+      <div style="border-radius:6px;overflow:hidden;position:relative;background:#111;">
+        <img src="foto5.jpg" alt="Casa Fondata nel 1845" 
+             style="width:100%;height:auto;display:block;">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:linear-gradient(transparent,rgba(26,10,2,0.95));color:var(--cream);font-size:11px;letter-spacing:1px;text-transform:uppercase;">Casa Fondata nel 1845</div>
+      </div>
+
+    </div>
+    <p style="font-size:11px;color:rgba(245,238,216,0.25);text-align:center;margin-top:1rem;"></p>
   </div>
 </section>
 
