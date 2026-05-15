@@ -282,10 +282,14 @@
   #historia { background: var(--cream-light); }
 
   .historia-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .historia-text {
+    max-width: 700px;
+    text-align: center;
   }
 
   .historia-text p {
@@ -294,12 +298,15 @@
     line-height: 1.9;
     color: var(--text-mid);
     margin-bottom: 1.2rem;
+    text-align: left;
   }
 
   .historia-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
+    width: 100%;
+    max-width: 900px;
   }
 
   .h-card {
@@ -308,6 +315,9 @@
     border-radius: 4px;
     padding: 1.25rem;
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .h-card:hover {
@@ -879,11 +889,10 @@
         <p>La fórmula completa es un secreto comercial guardado en una caja fuerte, transmitido de generación en generación. Solo 5 de los 27 ingredientes son conocidos únicamente por el miembro activo de la familia Branca, quien los mezcla en soledad.</p>
         <p>La bebida llegó a Argentina con la gran oleada de inmigrantes italianos. El éxito fue tal que en 1941 Fratelli Branca instaló su primera fábrica en Parque Patricios —la única destilería de la marca fuera de Italia en el mundo.</p>
       </div>
-      <div style="position:relative;">
-        <img src="foto1.jpg" 
-             alt="Publicidad clásica Fernet Branca"
-             style="width:100%;height:auto;display:block;border-radius:4px;margin-bottom:8px;">
-        <div style="font-size:11px;color:var(--text-light);text-align:center;margin-bottom:12px;">Publicidad clásica — Seit 1845</div>
+      <div style="text-align:center;">
+        <img src="foto1.jpg" alt="Publicidad clásica Fernet Branca"
+             style="max-width:320px;width:100%;height:auto;display:inline-block;border-radius:6px;">
+        <div style="font-size:11px;color:var(--text-light);margin-top:8px;">Publicidad clásica — Seit 1845</div>
       </div>
       <div class="historia-cards">
         <div class="h-card">
@@ -907,7 +916,7 @@
           <div class="h-card-value">Entre 39° y 45° según la marca</div>
         </div>
         <div class="h-card">
-          <div class="h-card-icon">🇦🇷</div>
+          <div class="h-card-icon">🌎</div>
           <div class="h-card-label">Llegada a Argentina</div>
           <div class="h-card-value">1860 (importado). Fábrica local desde 1941.</div>
         </div>
