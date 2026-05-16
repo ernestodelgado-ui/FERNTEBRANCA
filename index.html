@@ -98,11 +98,11 @@
 
   .hero-title {
     font-family: 'Nunito', sans-serif;
-    font-size: clamp(56px, 10vw, 110px);
+    font-size: clamp(72px, 13vw, 140px);
     font-weight: 900;
     color: var(--cream);
-    line-height: 0.9;
-    letter-spacing: -2px;
+    line-height: 0.88;
+    letter-spacing: -4px;
     position: relative; z-index: 1;
     opacity: 0;
     animation: fadeUp 0.8s 0.4s forwards;
@@ -229,19 +229,21 @@
     display: flex;
     gap: 0;
     list-style: none;
+    flex-wrap: nowrap;
   }
 
   .nav-links a {
     display: block;
-    padding: 0 14px;
-    font-size: 12px;
-    letter-spacing: 1px;
+    padding: 0 9px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     color: rgba(245,238,216,0.55);
     text-decoration: none;
     transition: color 0.2s;
     height: 56px;
     line-height: 56px;
+    white-space: nowrap;
   }
 
   .nav-links a:hover { color: var(--gold); }
@@ -253,8 +255,8 @@
 
   .section-label {
     font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    font-weight: 700;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: var(--amber);
     margin-bottom: 0.75rem;
@@ -262,11 +264,12 @@
 
   .section-title {
     font-family: 'Nunito', sans-serif;
-    font-size: clamp(32px, 5vw, 52px);
-    font-weight: 700;
+    font-size: clamp(40px, 6vw, 68px);
+    font-weight: 900;
     color: var(--brown-dark);
-    line-height: 1.1;
+    line-height: 1.05;
     margin-bottom: 1.5rem;
+    letter-spacing: -1.5px;
   }
 
   .section-title em { color: var(--brown-rich); font-style: italic; }
@@ -327,7 +330,7 @@
 
   .h-card-icon { font-size: 22px; margin-bottom: 8px; }
   .h-card-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--amber); margin-bottom: 4px; }
-  .h-card-value { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 600; color: var(--brown-dark); line-height: 1.4; }
+  .h-card-value { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 700; color: var(--brown-dark); line-height: 1.4; }
 
   /* ─── TIMELINE ─── */
   #timeline { background: var(--brown-dark); }
@@ -435,8 +438,8 @@
 
   .camp-title {
     font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 800;
     color: var(--cream);
     line-height: 1.3;
   }
@@ -830,19 +833,19 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo">🦅 Fernet Branca</a>
+    <a href="#" class="nav-logo">Fernet Branca</a>
     <ul class="nav-links">
       <li><a href="#historia">Historia</a></li>
-      <li><a href="#timeline">Línea de tiempo</a></li>
+      <li><a href="#timeline">Timeline</a></li>
       <li><a href="#campanas">Campañas</a></li>
       <li><a href="#consumo">Consumo</a></li>
       <li><a href="#precios">Precios</a></li>
-      <li><a href="#mitos">Verdades y mitos</a></li>
+      <li><a href="#mitos">Mitos</a></li>
       <li><a href="#curiosidades">Curiosidades</a></li>
       <li><a href="#artistas">Artistas</a></li>
       <li><a href="#foda">FODA</a></li>
       <li><a href="#benchmark">Benchmark</a></li>
-      <li><a href="#userpersona">User Persona</a></li>
+      <li><a href="#userpersona">Persona</a></li>
     </ul>
   </div>
 </nav>
@@ -851,7 +854,6 @@
 <div class="hero">
   <div class="hero-bg"></div>
   <div class="hero-lines"></div>
-  <div class="hero-eagle">🦅</div>
   <p class="hero-label">Milán, Italia · 1845</p>
   <h1 class="hero-title">Fernet<br><span>Branca</span></h1>
   <p class="hero-subtitle">Del laboratorio de un boticario al vaso de toda Argentina</p>
@@ -899,32 +901,26 @@
       </div>
       <div class="historia-cards">
         <div class="h-card">
-          <div class="h-card-icon">🏭</div>
           <div class="h-card-label">Creado por</div>
           <div class="h-card-value">Bernardino Branca, farmacéutico milanés</div>
         </div>
         <div class="h-card">
-          <div class="h-card-icon">📍</div>
           <div class="h-card-label">Lugar</div>
           <div class="h-card-value">Milán, Lombardía, Italia</div>
         </div>
         <div class="h-card">
-          <div class="h-card-icon">🌿</div>
           <div class="h-card-label">Ingredientes</div>
           <div class="h-card-value">27 hierbas, raíces y especias. Fórmula secreta.</div>
         </div>
         <div class="h-card">
-          <div class="h-card-icon">🍷</div>
           <div class="h-card-label">Graduación</div>
           <div class="h-card-value">Entre 39° y 45° según la marca</div>
         </div>
         <div class="h-card">
-          <div class="h-card-icon">🌎</div>
           <div class="h-card-label">Llegada a Argentina</div>
           <div class="h-card-value">1860 (importado). Fábrica local desde 1941.</div>
         </div>
         <div class="h-card">
-          <div class="h-card-icon">🔒</div>
           <div class="h-card-label">Fórmula</div>
           <div class="h-card-value">En caja fuerte. Solo el presidente la conoce.</div>
         </div>
@@ -965,35 +961,35 @@
     <div class="divider-line"></div>
     <div class="campanas-grid">
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">🎨</span><div class="camp-title">Almanaques artísticos (desde 1886)</div></div>
+        <div class="camp-header"><span class="camp-icon"></span><div class="camp-title">Almanaques artísticos (desde 1886)</div></div>
         <div class="camp-body">Una de las estrategias más tempranas: contrató a los mejores artistas de la época (Metlicovitz, Mauzan, Amisani) para crear calendarios y afiches. El logo del águila, creado por Metlicovitz, sigue siendo el emblema de la marca hoy.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">🦅</span><div class="camp-title">"El águila tiene que volar" (años 80)</div></div>
+        <div class="camp-header"><span class="camp-icon"></span><div class="camp-title">"El águila tiene que volar" (años 80)</div></div>
         <div class="camp-body">Campaña argentina que transformó la percepción del Fernet: de digestivo medicinal a bebida de estilo. Filmaron un águila real en la Patagonia, inspirada en el lema italiano "sopra tutti" (por encima de todos). Marcó el inicio de la era juvenil del Fernet.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">🖼️</span><div class="camp-title">Concurso "Arte Único" (+16 años)</div></div>
+        <div class="camp-header"><span class="camp-icon">️</span><div class="camp-title">Concurso "Arte Único" (+16 años)</div></div>
         <div class="camp-body">Concurso abierto a artistas de toda Latinoamérica. Con más de 15.000 obras participantes, es hoy el concurso de diseño y afiches más importante de la región. Rinde homenaje al afichismo italiano original.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">📺</span><div class="camp-title">"Nuevo desde 1845" (agencia Lado C)</div></div>
+        <div class="camp-header"><span class="camp-icon"></span><div class="camp-title">"Nuevo desde 1845" (agencia Lado C)</div></div>
         <div class="camp-body">Campaña gráfica y televisiva con frases como "El último fernet se inventó el mismo día que el primero" y "Sin antes, ni después". Cuatro spots breves para TV y piezas gráficas con el producto en primer plano.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">🌿</span><div class="camp-title">"Nace Único" (botánicos)</div></div>
+        <div class="camp-header"><span class="camp-icon"></span><div class="camp-title">"Nace Único" (botánicos)</div></div>
         <div class="camp-body">Revela secretos de la fórmula de 180 años: la "sabiduría de cuatro continentes". El azafrán de España, la mirra de Somalia, el hongo agárico de Siberia. Alineada con la tendencia de consumo de productos naturales.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">🏳️</span><div class="camp-title">"El Águila es Bandera" (Copa América 2024)</div></div>
+        <div class="camp-header"><span class="camp-icon">️</span><div class="camp-title">"El Águila es Bandera" (Copa América 2024)</div></div>
         <div class="camp-body">Lanzada el Día de la Bandera (20 de junio). Contó con Marcelo "Corvata" Corvalán de Carajo interpretando una versión rock del himno "Aurora", vinculando el águila de Branca con la identidad nacional.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">😤</span><div class="camp-title">"Somos Insoportables" (Mundial 2026)</div></div>
+        <div class="camp-header"><span class="camp-icon"></span><div class="camp-title">"Somos Insoportables" (Mundial 2026)</div></div>
         <div class="camp-body">Desarrollada por Zurda Agency. Convierte la "intensidad insoportable" del argentino durante el Mundial en orgullo de marca. Protagonizada por streamers internacionales junto a Luquitas Rodríguez. Pensada como gran pieza de PR.</div>
       </div>
       <div class="camp-card">
-        <div class="camp-header"><span class="camp-icon">🎓</span><div class="camp-title">Accademia Branca</div></div>
+        <div class="camp-header"><span class="camp-icon"></span><div class="camp-title">Accademia Branca</div></div>
         <div class="camp-body">Primera plataforma de formación para bartenders, 100% virtual, con aval académico de UADE. Posiciona la marca en el universo premium de la coctelería profesional latinoamericana.</div>
       </div>
     </div>
@@ -1117,14 +1113,14 @@
     <h2 class="section-title" style="color:var(--cream)">Verdades y <em style="color:var(--gold)">mitos</em></h2>
     <div class="divider-line" style="background:linear-gradient(to right,var(--amber-light),transparent)"></div>
     <div class="mitos-grid">
-      <div class="mito-card verdad"><div class="mito-badge">✦ Verdad</div><div class="mito-text">La receta tiene 27 hierbas, flores y raíces. Solo 5 ingredientes son conocidos únicamente por un miembro de la familia Branca, quien los mezcla en soledad con estricto contrato de confidencialidad.</div></div>
-      <div class="mito-card verdad"><div class="mito-badge">✦ Verdad</div><div class="mito-text">Argentina consume más del 75% de todo el Fernet Branca producido en el mundo, siendo la nación que más lo consume.</div></div>
-      <div class="mito-card verdad"><div class="mito-badge">✦ Verdad</div><div class="mito-text">Fue originalmente comercializado como remedio medicinal contra el cólera, los cólicos menstruales y problemas digestivos. Durante la Ley Seca en EE.UU., se vendía legalmente en farmacias.</div></div>
-      <div class="mito-card verdad"><div class="mito-badge">✦ Verdad</div><div class="mito-text">El Fernet argentino y el italiano son distintos. El argentino es más dulce y menos herbal, adaptado al paladar local y elaborado con agua diferente.</div></div>
-      <div class="mito-card mito"><div class="mito-badge">✗ Mito</div><div class="mito-text">"El Fernet con Coca nació en Córdoba en los años 90." Falso: existen publicidades televisivas de mediados de los 80 emitidas con alcance nacional donde la propia marca ya usaba esa combinación.</div></div>
-      <div class="mito-card mito"><div class="mito-badge">✗ Mito</div><div class="mito-text">"El Fernet cura la resaca." No existe evidencia científica. El alcohol no cura los efectos del alcohol. La sensación de alivio puede deberse al efecto placebo.</div></div>
-      <div class="mito-card mito"><div class="mito-badge">✗ Mito</div><div class="mito-text">"El Fernet es exclusivamente italiano." Argentina tiene producción oficial desde 1941 y produce más que Italia: 55M de botellas vs 12M anuales de toda la gama Branca.</div></div>
-      <div class="mito-card incierto"><div class="mito-badge">~ Incierto</div><div class="mito-text">El Doctor Fernet "desapareció misteriosamente". Si bien la historia es real y misteriosa, hay múltiples versiones sobre el origen del nombre y ninguna está confirmada definitivamente.</div></div>
+      <div class="mito-card verdad"><div class="mito-badge">Verdad</div><div class="mito-text">La receta tiene 27 hierbas, flores y raíces. Solo 5 ingredientes son conocidos únicamente por un miembro de la familia Branca, quien los mezcla en soledad con estricto contrato de confidencialidad.</div></div>
+      <div class="mito-card verdad"><div class="mito-badge">Verdad</div><div class="mito-text">Argentina consume más del 75% de todo el Fernet Branca producido en el mundo, siendo la nación que más lo consume.</div></div>
+      <div class="mito-card verdad"><div class="mito-badge">Verdad</div><div class="mito-text">Fue originalmente comercializado como remedio medicinal contra el cólera, los cólicos menstruales y problemas digestivos. Durante la Ley Seca en EE.UU., se vendía legalmente en farmacias.</div></div>
+      <div class="mito-card verdad"><div class="mito-badge">Verdad</div><div class="mito-text">El Fernet argentino y el italiano son distintos. El argentino es más dulce y menos herbal, adaptado al paladar local y elaborado con agua diferente.</div></div>
+      <div class="mito-card mito"><div class="mito-badge">Mito</div><div class="mito-text">"El Fernet con Coca nació en Córdoba en los años 90." Falso: existen publicidades televisivas de mediados de los 80 emitidas con alcance nacional donde la propia marca ya usaba esa combinación.</div></div>
+      <div class="mito-card mito"><div class="mito-badge">Mito</div><div class="mito-text">"El Fernet cura la resaca." No existe evidencia científica. El alcohol no cura los efectos del alcohol. La sensación de alivio puede deberse al efecto placebo.</div></div>
+      <div class="mito-card mito"><div class="mito-badge">Mito</div><div class="mito-text">"El Fernet es exclusivamente italiano." Argentina tiene producción oficial desde 1941 y produce más que Italia: 55M de botellas vs 12M anuales de toda la gama Branca.</div></div>
+      <div class="mito-card incierto"><div class="mito-badge">Incierto</div><div class="mito-text">El Doctor Fernet "desapareció misteriosamente". Si bien la historia es real y misteriosa, hay múltiples versiones sobre el origen del nombre y ninguna está confirmada definitivamente.</div></div>
     </div>
   </div>
 </section>
@@ -1160,37 +1156,31 @@
     <div class="divider-line"></div>
     <div class="artistas-grid">
       <div class="artist-card">
-        <div class="artist-avatar">🎸</div>
         <div class="artist-name">Marcelo "Corvata" Corvalán</div>
         <div class="artist-genre">Rock — Carajo</div>
         <div class="artist-desc">Interpretó una versión rock del himno "Aurora" para la campaña Copa América 2024 de Branca.</div>
       </div>
       <div class="artist-card">
-        <div class="artist-avatar">🎙️</div>
         <div class="artist-name">Luquitas Rodríguez</div>
         <div class="artist-genre">Streaming / Influencer</div>
         <div class="artist-desc">Protagonista del spot "Somos Insoportables" del Mundial 2026.</div>
       </div>
       <div class="artist-card">
-        <div class="artist-avatar">📺</div>
         <div class="artist-name">Gamuza (Brian Caruso)</div>
         <div class="artist-genre">Creador de contenido</div>
         <div class="artist-desc">Streamer internacional en la campaña mundialista "Somos Insoportables" 2026.</div>
       </div>
       <div class="artist-card">
-        <div class="artist-avatar">⚽</div>
         <div class="artist-name">Allan Brazuca (Allan Jones)</div>
         <div class="artist-genre">Streamer internacional</div>
         <div class="artist-desc">Streamer de fútbol. Participó en la campaña del Mundial 2026 junto a Branca.</div>
       </div>
       <div class="artist-card">
-        <div class="artist-avatar">🎨</div>
         <div class="artist-name">Martín Ron</div>
         <div class="artist-genre">Muralismo</div>
         <div class="artist-desc">Reconocido muralista argentino. Creó el mural icónico en la planta de Tortuguitas.</div>
       </div>
       <div class="artist-card">
-        <div class="artist-avatar">🖌️</div>
         <div class="artist-name">Leopoldo Metlicovitz</div>
         <div class="artist-genre">Afichismo italiano (histórico)</div>
         <div class="artist-desc">Diseñó el logo del águila en 1895. Sigue siendo el emblema oficial de Fratelli Branca.</div>
@@ -1200,22 +1190,18 @@
     <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--amber);margin:3rem 0 1rem;font-weight:500">Asociación por escenas</p>
     <div class="escenas-grid">
       <div class="escena-card">
-        <div class="escena-icon">🎸</div>
         <div class="escena-title">Rock nacional</div>
         <div class="escena-desc">Presencia histórica en recitales y festivales. Asociado a la cultura rockera argentina.</div>
       </div>
       <div class="escena-card">
-        <div class="escena-icon">🎺</div>
         <div class="escena-title">Cumbia / Cuarteto</div>
         <div class="escena-desc">Especialmente en Córdoba, donde el Fernet con Coca es parte de toda reunión.</div>
       </div>
       <div class="escena-card">
-        <div class="escena-icon">⚽</div>
         <div class="escena-title">Fútbol / Deporte</div>
         <div class="escena-desc">El "viajero" se viralizó en Qatar 2022 con la Selección Argentina campeona.</div>
       </div>
       <div class="escena-card">
-        <div class="escena-icon">💻</div>
         <div class="escena-title">Streaming digital</div>
         <div class="escena-desc">La apuesta actual: streamers y creadores, el ecosistema de las nuevas generaciones.</div>
       </div>
@@ -1278,7 +1264,7 @@
 
       <!-- Fortalezas -->
       <div style="background:#1a3a1a;border-radius:6px;padding:2rem;border-top:3px solid #5a9e5a;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#6dbf6d;margin-bottom:1rem;">💪 Fortalezas</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#6dbf6d;margin-bottom:1rem;">Fortalezas</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #5a9e5a;">Marca líder con más de 180 años de historia y fórmula secreta inimitable</li>
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #5a9e5a;">70% de participación en facturación y 55% del mercado total en Argentina</li>
@@ -1290,7 +1276,7 @@
 
       <!-- Oportunidades -->
       <div style="background:#1a2a3a;border-radius:6px;padding:2rem;border-top:3px solid #4a90d9;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#6ab0f5;margin-bottom:1rem;">🚀 Oportunidades</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#6ab0f5;margin-bottom:1rem;">Oportunidades</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #4a90d9;">Expansión a Brasil, Chile y resto de Latinoamérica</li>
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #4a90d9;">Tendencia global de consumo de bebidas botánicas y naturales</li>
@@ -1302,7 +1288,7 @@
 
       <!-- Debilidades -->
       <div style="background:#3a1a1a;border-radius:6px;padding:2rem;border-top:3px solid #c25555;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#e07070;margin-bottom:1rem;">⚠️ Debilidades</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#e07070;margin-bottom:1rem;">Debilidades</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #c25555;">Precio premium que lo hace vulnerable en contextos de alta inflación</li>
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #c25555;">Sabor intenso y adquirido: barrera de entrada para nuevos consumidores</li>
@@ -1313,7 +1299,7 @@
 
       <!-- Amenazas -->
       <div style="background:#2a2a1a;border-radius:6px;padding:2rem;border-top:3px solid #c8892a;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#e8b84b;margin-bottom:1rem;">⚡ Amenazas</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#e8b84b;margin-bottom:1rem;">Amenazas</div>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #c8892a;">Competidores con respaldo de multinacionales: Pernod Ricard (Ramazzotti, Buhero Negro)</li>
           <li style="font-size:13.5px;color:rgba(245,238,216,0.85);line-height:1.55;padding-left:14px;border-left:2px solid #c8892a;">Crecimiento del segmento artesanal (Chola, Viterbo, Gabutti) entre consumidores premium</li>
@@ -1347,7 +1333,7 @@
         </thead>
         <tbody>
           <tr style="background:rgba(200,137,42,0.1);">
-            <td style="padding:14px 16px;color:var(--gold);font-weight:700;border-bottom:1px solid rgba(255,255,255,0.05);">🦅 Fernet Branca</td>
+            <td style="padding:14px 16px;color:var(--gold);font-weight:700;border-bottom:1px solid rgba(255,255,255,0.05);">Fernet Branca</td>
             <td style="padding:14px 16px;color:rgba(245,238,216,0.8);border-bottom:1px solid rgba(255,255,255,0.05);">Fratelli Branca</td>
             <td style="padding:14px 16px;border-bottom:1px solid rgba(255,255,255,0.05);"><span style="background:rgba(200,137,42,0.2);color:var(--amber);padding:2px 8px;border-radius:20px;font-size:11px;">Premium</span></td>
             <td style="padding:14px 16px;color:var(--gold);font-weight:700;border-bottom:1px solid rgba(255,255,255,0.05);">~55%</td>
@@ -1412,7 +1398,7 @@
       <!-- Persona 1 -->
       <div style="background:var(--white);border:1px solid rgba(200,137,42,0.15);border-radius:6px;overflow:hidden;">
         <div style="background:var(--brown-mid);padding:1.5rem;text-align:center;">
-          <div style="font-size:52px;margin-bottom:8px;">👨‍🎓</div>
+          <div style="font-size:52px;margin-bottom:8px;">‍</div>
           <div style="font-family:'Nunito',sans-serif;font-size:18px;font-weight:700;color:var(--gold);">Lautaro</div>
           <div style="font-size:12px;color:rgba(245,238,216,0.6);margin-top:4px;">22 años · Estudiante universitario · Córdoba</div>
         </div>
@@ -1439,7 +1425,7 @@
       <!-- Persona 2 -->
       <div style="background:var(--white);border:1px solid rgba(200,137,42,0.15);border-radius:6px;overflow:hidden;">
         <div style="background:var(--brown-rich);padding:1.5rem;text-align:center;">
-          <div style="font-size:52px;margin-bottom:8px;">👩‍💼</div>
+          <div style="font-size:52px;margin-bottom:8px;">‍</div>
           <div style="font-family:'Nunito',sans-serif;font-size:18px;font-weight:700;color:var(--gold);">Valentina</div>
           <div style="font-size:12px;color:rgba(245,238,216,0.6);margin-top:4px;">29 años · Diseñadora · Buenos Aires</div>
         </div>
@@ -1466,7 +1452,7 @@
       <!-- Persona 3 -->
       <div style="background:var(--white);border:1px solid rgba(200,137,42,0.15);border-radius:6px;overflow:hidden;">
         <div style="background:var(--brown-dark);padding:1.5rem;text-align:center;">
-          <div style="font-size:52px;margin-bottom:8px;">👨‍🍳</div>
+          <div style="font-size:52px;margin-bottom:8px;">‍</div>
           <div style="font-family:'Nunito',sans-serif;font-size:18px;font-weight:700;color:var(--gold);">Marcos</div>
           <div style="font-size:12px;color:rgba(245,238,216,0.6);margin-top:4px;">38 años · Bartender profesional · Rosario</div>
         </div>
@@ -1496,7 +1482,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">🦅 Fernet Branca</div>
+  <div class="footer-logo">Fernet Branca</div>
   <div class="footer-sub">Milán · 1845 — Argentina · desde 1860</div>
   <div class="footer-sources">
     <strong style="color:rgba(245,238,216,0.4)">Fuentes:</strong> Wikipedia, Fernet-Branca.com, La Nación, Infobae, Crónicas de Milán, WikiLiquors, BonViveur, TotalMedios, MercadoNegro, El Destape Web, Adlatina.
